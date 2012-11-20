@@ -17,9 +17,6 @@
 # All the blobs necessary for steelhead, derived from maguro
 PRODUCT_COPY_FILES += \
     vendor/google/steelhead/proprietary/pvrsrvinit:system/vendor/bin/pvrsrvinit \
-    vendor/google/steelhead/proprietary/bcm4330.hcd:system/vendor/firmware/bcm4330.hcd \
-    vendor/google/steelhead/proprietary/ducati-m3.bin:system/vendor/firmware/ducati-m3.bin \
-    vendor/google/steelhead/proprietary/libpn544_fw.so:system/vendor/firmware/libpn544_fw.so \
     vendor/google/steelhead/proprietary/libEGL_POWERVR_SGX540_120.so:system/vendor/lib/egl/libEGL_POWERVR_SGX540_120.so \
     vendor/google/steelhead/proprietary/libGLESv1_CM_POWERVR_SGX540_120.so:system/vendor/lib/egl/libGLESv1_CM_POWERVR_SGX540_120.so \
     vendor/google/steelhead/proprietary/libGLESv2_POWERVR_SGX540_120.so:system/vendor/lib/egl/libGLESv2_POWERVR_SGX540_120.so \
@@ -33,13 +30,19 @@ PRODUCT_COPY_FILES += \
     vendor/google/steelhead/proprietary/libsrv_um.so:system/vendor/lib/libsrv_um.so \
     vendor/google/steelhead/proprietary/libusc.so:system/vendor/lib/libusc.so
 
-# Blobs unique to steelhead
-PRODUCT_COPY_FILES += \
-    vendor/google/steelhead/proprietary/sledadk_controller.bin:system/vendor/firmware/sledadk_controller.bin \
-    vendor/google/steelhead/proprietary/smc_pa_wvdrm.ift:system/vendor/firmware/smc_pa_wvdrm.ift \
-    vendor/google/steelhead/proprietary/smc_normal_world_android_cfg.ini:system/vendor/etc/smc_normal_world_android_cfg.ini \
-    vendor/google/steelhead/proprietary/libdrmwvmplugin.so:system/vendor/lib/drm/libdrmwvmplugin.so \
-    vendor/google/steelhead/proprietary/libWVStreamControlAPI_L1.so:system/vendor/lib/libWVStreamControlAPI_L1.so \
-    vendor/google/steelhead/proprietary/libwvdrm_L1.so:system/vendor/lib/libwvdrm_L1.so \
-    vendor/google/steelhead/proprietary/libwvm.so:system/vendor/lib/libwvm.so
+### Blobs unique to steelhead
+##PRODUCT_COPY_FILES += \
+    ##vendor/google/steelhead/proprietary/sledadk_controller.bin:system/vendor/firmware/sledadk_controller.bin \
+    ##vendor/google/steelhead/proprietary/smc_pa_wvdrm.ift:system/vendor/firmware/smc_pa_wvdrm.ift \
+    ##vendor/google/steelhead/proprietary/smc_normal_world_android_cfg.ini:system/vendor/etc/smc_normal_world_android_cfg.ini \
+    ##vendor/google/steelhead/proprietary/libdrmwvmplugin.so:system/vendor/lib/drm/libdrmwvmplugin.so \
+    ##vendor/google/steelhead/proprietary/libWVStreamControlAPI_L1.so:system/vendor/lib/libWVStreamControlAPI_L1.so \
+    ##vendor/google/steelhead/proprietary/libwvdrm_L1.so:system/vendor/lib/libwvdrm_L1.so \
+    ##vendor/google/steelhead/proprietary/libwvm.so:system/vendor/lib/libwvm.so
+
+## Blobs removed by TI
+###PRODUCT_COPY_FILES += \
+    ##vendor/google/steelhead/proprietary/ducati-m3.bin:system/vendor/firmware/ducati-m3.bin \
+    ##vendor/google/steelhead/proprietary/bcm4330.hcd:system/vendor/firmware/bcm4330.hcd \
+    ##vendor/google/steelhead/proprietary/libpn544_fw.so:system/vendor/firmware/libpn544_fw.so \
 
